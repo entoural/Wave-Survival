@@ -1,0 +1,10 @@
+- All the logic must always be written inside Systems. Systems model behaviours that can be applied to entities.
+- Entities are not objects, they just aggregate Components (which is equivalent to implementing high-level interfaces)
+- Components don’t hold logic, they are just data wrappers.
+- Components can’t have methods, only get and set properties.
+- Each System has one responsibility only.
+- Systems cannot be injected.
+- Systems communicate with each other through components.
+- Systems can have injected dependencies, but this would mean mixing ECS with OOP.
+- Systems do not know each other.
+- Systems must be packed in different modules according to their level of abstraction.
